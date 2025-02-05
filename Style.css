@@ -1,0 +1,183 @@
+/* General body styles */
+body {
+    background-color: #181818;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+/* Main player container */
+.player-container {
+    width: 80%;
+    max-width: 350px;  /* Max width for larger screens */
+    height: 80%;
+    max-height: 450px; /* Max height for larger screens */
+    background-color: #121212;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Album Art styling */
+#album-art {
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+/* Song and artist title above controls */
+#song-info {
+    width: 100%;
+    text-align: left;
+    padding: 5px 0;
+    margin-bottom: 10px;
+}
+
+#song-title {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+#artist-name {
+    font-size: 16px;
+    color: #b3b3b3;
+}
+
+/* Controls container */
+.controls-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+}
+
+/* Control buttons */
+button {
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+button:hover {
+    background-color: #1ed760;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button#shuffle-btn.active {
+    background-color: #1ed760;
+}
+
+/* Playlist container */
+#playlist-container {
+    display: none;
+    background-color: #181818;
+    padding: 20px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 300px;
+    max-height: 300px;
+    overflow-y: scroll;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+
+#playlist-queue {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#playlist-queue li {
+    padding: 8px;
+    background-color: #333;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#playlist-queue li:hover {
+    background-color: #555;
+}
+
+/* Back button to close playlist */
+#back-btn {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #1DB954;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#back-btn:hover {
+    background-color: #1ed760;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 600px) {
+    #song-title {
+        font-size: 16px;
+    }
+
+    #artist-name {
+        font-size: 14px;
+    }
+
+    .controls-container button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .player-container {
+        width: 90%;
+        max-width: 300px; /* Ensure the player fits on small screens */
+        height: auto;
+        max-height: none;
+    }
+
+    #album-art {
+        width: 70%;
+        max-width: 160px;
+    }
+
+    /* Hide native player on mobile to use custom controls */
+    audio {
+        display: none;
+    }
+
+    /* Adjust playlist container to fit smaller screens */
+    #playlist-container {
+        width: 90%;
+        max-width: 280px;
+        height: auto;
+    }
+}

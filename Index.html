@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="player-container">
+        <!-- Album Art -->
+        <img id="album-art" src="" alt="Album Art">
+        
+        <!-- Song Title and Artist Name -->
+        <div id="song-info">
+            <p id="song-title">Song Title</p>
+            <p id="artist-name">David</p>
+        </div>
+
+        <!-- Audio Player (Visible) -->
+        <audio id="audio-player" controls>
+            <source id="audio-source" src="" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Custom Controls -->
+        <div class="controls-container">
+            <button id="play-btn">▶️</button>
+            <button id="pause-btn" style="display:none;">⏸️</button>
+            <button id="next-btn">⏩</button>
+            <button id="shuffle-btn">🔀</button>
+            <button id="playlist-btn">🎶</button>
+        </div>
+    </div>
+
+    <!-- Playlist Container -->
+    <div id="playlist-container">
+        <button id="back-btn">⬅️</button>
+        <ul id="playlist-queue"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
