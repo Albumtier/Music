@@ -12,17 +12,17 @@ document.addEventListener("DOMContentLoaded", function() {
     const playlistBtn = document.getElementById("playlist-btn");
 
     const songs = [
-        { title: "Musings", file: "music/Musings.mp3" },
-        { title: "Love Comes, Love Goes", file: "music/Love Comes, Love Goes.mp3" },
-        { title: "Let You Go", file: "music/Let You Go.mp3" },
-        { title: "I Hope You Know Love", file: "music/I Hope You Know Love.mp3" },
-        { title: "Drowning", file: "music/Drowning.mp3" },
-        { title: "Get Over You", file: "music/Get Over You.mp3" },
-        { title: "Solo Tu", file: "music/Solo Tu.mp3" },
-        { title: "One Request", file: "music/One Request.mp3" },
-        { title: "Musings (slowed + reverb)", file: "music/Musings (slowed + reverb).mp3" },
-        { title: "Love Comes, Love Goes (stripped)", file: "music/Love Comes, Love Goes (stripped).mp3" },
-        { title: "Love Comes, Love Goes (stripped + slowed + reverb)", file: "music/Love Comes, Love Goes (slowed_reverb).mp3" }
+        { title: "Musings", file: "/music/Musings.mp3" },
+        { title: "Love Comes, Love Goes", file: "/music/Love Comes, Love Goes.mp3" },
+        { title: "Let You Go", file: "/music/Let You Go.mp3" },
+        { title: "I Hope You Know Love", file: "/music/I Hope You Know Love.mp3" },
+        { title: "Drowning", file: "/music/Drowning.mp3" },
+        { title: "Get Over You", file: "/music/Get Over You.mp3" },
+        { title: "Solo Tu", file: "/music/Solo Tu.mp3" },
+        { title: "One Request", file: "/music/One Request.mp3" },
+        { title: "Musings (slowed + reverb)", file: "/music/Musings (slowed + reverb).mp3" },
+        { title: "Love Comes, Love Goes (stripped)", file: "/music/Love Comes, Love Goes (stripped).mp3" },
+        { title: "Love Comes, Love Goes (stripped + slowed + reverb)", file: "/music/Love Comes, Love Goes (slowed_reverb).mp3" }
     ];
 
     let currentSongIndex = 0;
