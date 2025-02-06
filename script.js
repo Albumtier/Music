@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
         { title: "I Hope You Know Love", file: "/music/I Hope You Know Love.mp3" },
         { title: "Drowning", file: "/music/Drowning.mp3" },
         { title: "Get Over You", file: "/music/Get Over You.mp3" },
-        { title: "Solo Tu", file: "/music/Solo Tu.mp3" },
+        { title: "Solo Tú", file: "/music/Solo Tu.mp3" },
         { title: "One Request", file: "/music/One Request.mp3" },
         { title: "Musings (slowed + reverb)", file: "/music/Musings (slowed + reverb).mp3" },
         { title: "Love Comes, Love Goes (stripped)", file: "/music/Love Comes, Love Goes (stripped).mp3" },
